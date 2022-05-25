@@ -8,8 +8,8 @@ def on_connect(self, client, userdata, rc):
 
 def on_message(client, userdata,msg):
     a = msg.payload.decode("utf-8", "strict")
-    b = a.upper()
-    print(b)
+    #b = a.upper()
+    #print(b)
     #client.publish("TEST/MQTT/CCC", b)
     
 
