@@ -7,7 +7,7 @@ def on_connect(self, client, userdata, rc):
     self.subscribe("TEST/MQTT/CCC")
 
 def on_message(client, userdata,msg):
-    msg.payload.decode("utf-8", "strict")
+    print(msg.payload.decode("utf-8", "strict"))
     #b = a.upper()
     #print(b)
     #client.publish("TEST/MQTT/CCC", b)
